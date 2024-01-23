@@ -21,10 +21,8 @@ if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
 # Change to CONF_FILE = "settings.json" if you have problems with env variables
-CONF_FILE = "settings.json" #os.getenv('CONF_PATH')
+CONF_FILE = "settings.json" 
 
-# Load configuration settings from JSON
-logger.info("Loading configuration settings from JSON...")
 with open(CONF_FILE, "r") as file:
     conf = json.load(file)
 
